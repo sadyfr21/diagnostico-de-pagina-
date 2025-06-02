@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        color: #333;
+    }
+    h1 {
+        color: #2c3e50;
+    }
+    h2 {
+        color: #34495e;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    ul {
+        margin-left: 20px;
+    }      
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        color: #2980b9;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+    h1, h2 {
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+    @media (max-width: 600px) {
+        body {
+            margin: 10px;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    @media (min-width: 601px) and (max-width: 1200px) {
+        body {
+            margin: 15px;
+        }
+        h1 {
+            font-size: 22px;
+        }
+        h2 {
+            font-size: 19px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    @media (min-width: 1201px) {
+        body {
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    @media print {
+        body {
+            font-size: 12px;
+            margin: 0;
+        }
+        h1, h2 {
+            page-break-after: avoid;
+        }
+        p, ul, li {
+            page-break-inside: avoid;
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        h1, h2 {
+            color: #657ec9;
+        }
+        a {
+            color: #03a9f4;
+        }
+    }
+    @media (prefers-color-scheme: light) {
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        a {
+            color: #2980b9;
+        }
+    }
+    @media (max-width: 600px) {
+        body {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+    }
+    @media (min-width: 601px) and (max-width: 1200px) {
+        body {
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 22px;
+        }
+        h2 {
+            font-size: 19px;
+        }
+    }
+    @media (min-width: 1201px) {
+        body {
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+    @media print {
+        body {
+            font-size: 12px;
+            margin: 0;
+        }
+        h1, h2 {
+            page-break-after: avoid;
+        }
+        p, ul, li {
+            page-break-inside: avoid;
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        h1, h2 {
+            color: #657ec9;
+        }
+        a {
+            color: #03a9f4;
+        }
+    }
+    @media (prefers-color-scheme: light) {
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        a {
+            color: #2980b9;
+        }
+    }
+</style>
+<body>
+    <h1>
+       Diagnostico y recomendaciones de mejora para la web de la empresa
+    </h1>
+    <h1>
+        1. Evitar grandes cambios de diseño
+    </h1>
+    <p>
+        📌 Recomendación: Mantén la estructura visual consistente en la maqueta para evitar que los usuarios se desorienten. Planifica cambios de diseño de manera progresiva y realiza pruebas A/B antes de implementarlos.
+
+    </p>
+    <h2>
+        2. Elemento de Paint con contenido más grande (26200 ms)
+    </h2>
+        <p>
+            📌 Recomendación: Usa imágenes optimizadas y técnicas como lazy loading para evitar la carga innecesaria de elementos pesados. Reduce la resolución de imágenes si no afecta la calidad percibida.
+
+        </p>
+        <h1>
+            3. Reducir el tiempo de ejecución de JavaScript (2,5 s)
+        </h1>
+        <p>
+            📌 Recomendación: Optimiza los scripts eliminando funciones innecesarias, minifica el código y usa carga asíncrona o diferida (defer y async). Evalúa el uso de bibliotecas más livianas.
+
+        </p>
+        <h1>4. Minimizar el trabajo del hilo principal (4,48 s)</h1>
+        <p>📌 Recomendación: Descompón tareas pesadas en pequeñas unidades. Utiliza Web Workers para ejecutar scripts en segundo plano sin bloquear la interacción del usuario.
+</p>
+<h1>5. Reducir el impacto del código de terceros (290 ms)</h1>
+<p>📌 Recomendación: Revisa qué bibliotecas y scripts de terceros realmente necesitas. Considera reemplazar componentes pesados con alternativas más eficientes y usar carga diferida.
+</p>
+<h1>6. Eliminar recursos que bloquean la representación (1160 ms)</h1>
+<p>Recomendación: Usa CSS crítico en línea y carga diferida de recursos no esenciales. Prioriza elementos clave en la carga inicial de la página.
+</p>
+<h1>7. Reducir CSS no utilizado (Ahorro potencial de 39 IGB)</h1>
+<p>📌 Recomendación: Usa herramientas como PurifyCSS o UnCSS para eliminar reglas de estilo no utilizadas y reducir el peso de los archivos CSS.
+</p>
+<h1>8. Servir imágenes en formatos de próxima generación (1303 IGB)</h1>
+<p>📌 Recomendación: Usa WebP o AVIF en lugar de PNG o JPEG. Estos formatos reducen el tamaño del archivo sin perder calidad.
+</p>
+<h1>9. Precargar la imagen de Paint con contenido más grande (1320 ms)</h1>
+<p>📌 Recomendación: Implementa link rel="preload" href="URL de la imagen" para cargar imágenes críticas antes de que sean necesarias.
+</p>
+<h1>10. Reducir JavaScript no utilizado (450 IGB)</h1>
+<p>📌 Recomendación: Aplica técnicas como tree-shaking en frameworks modernos para eliminar código no utilizado. Audita los scripts con herramientas como Lighthouse.
+</p>
+<h1>11. Preconectar a los orígenes requeridos (510 ms) </h1>
+<p>📌 Recomendación: Usa link rel="preconnect" href="URL del recurso" para establecer conexiones anticipadas con servidores externos y reducir el tiempo de carga.
+</p>
+<h1>12. Restauración de caché bloqueada</h1>
+<p> Recomendación: Configura encabezados HTTP adecuados (Cache-Control, ETag, Expires) para permitir la restauración eficiente de la caché y mejorar la navegación.
+Si necesitas ayuda para implementar alguna de estas mejoras, dime y te ayudo a afinar los detalles. 
+</p>
+</body>
+</html>
